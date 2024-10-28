@@ -32,4 +32,9 @@ public class UserController {
         return userService.getAllUser();
 
     }
+
+    @PostMapping("/login")
+    public String login(@RequestBody User user){
+        return userService.verifyUser(user) ;
+    }
 }
