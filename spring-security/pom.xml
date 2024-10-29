@@ -107,6 +107,7 @@
 				</configuration>
 			</plugin>
 		</plugins>
+<!--		<finalName>SpringSecurity-Docker</finalName>-->
 	</build>
 
 </project>
