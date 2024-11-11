@@ -21,7 +21,7 @@ public class UserController {
     private UserService userService;
 
     @PostMapping("/Register")
-    public ResponseEntity<User> createRoom(@RequestBody User user) {
+    public ResponseEntity<User> createUser(@RequestBody User user) {
         User savedUser = userService.CreateUser(user);
         return new ResponseEntity<>(savedUser, HttpStatus.CREATED);
     }
